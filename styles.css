@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    font-family: Lato;
+    --Text-Colour: rgba(51, 51, 51, 1)
+}
+
+body {
+    font-family: var(--font-family, 'Lato'), sans-serif;
+}
+
+.header-bg {
+    top: 0;
+    right: 0;
+    /* Place the image at the right end */
+    height: auto;
+    width: 48%;
+    /* Maintain aspect ratio */
+    z-index: -1;
+    /* Send the image behind other elements */
+}
+
+.d-grad {
+    background: linear-gradient(269.75deg, #19D0FC -550.59%, #07163F 107.92%);
+    background: linear-gradient(269.75deg, #19D0FC -550.59%, #07163F 107.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* For non-WebKit browsers */
+    text-fill-color: transparent;
+}
+
+.logotext {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 38.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.btn-filled {
+    border-radius: 16px;
+    width: 222px;
+    height: 88px;
+    top: 74px;
+    background-color: white;
+    color: #07163F !important;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.btn-lined {
+    border-radius: 16px;
+    width: 222px;
+    height: 88px;
+    top: 74px;
+    background-color: transparent;
+    color: white !important;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 222px;
+    border-width: 4px;
+    border-color: white;
+}
+
+.btn-get {
+    width: 286px;
+    height: 78px;
+    gap: 0px;
+    border-radius: 16px;
+    border-width: 3px;
+    background-color: white;
+    color: #07163F;
+    border-color: #07163F;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 57.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.lead {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: var(--Text-Colour, rgba(51, 51, 51, 1));
+
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 38.4px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #07163F;
+}
+
+.xbs {
+    width: auto;
+    height: auto;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.xbs img {
+    transition: transform 0.6s ease;
+    /* Smooth flipping animation */
+}
+
+.xbs:hover img {
+    transform: rotateY(180deg);
+    /* Flip the image horizontally */
+}
+
+.xbs:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge the card */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    /* Add a deeper shadow */
+}
+
+.dark-bg {
+    background: linear-gradient(269.75deg, #19D0FC -550.59%, #07163F 107.92%);
+}
+
+.box-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.ash {
+    background: rgba(7, 22, 63, 0.1);
+    width: 100%;
+    /* Ensure full width */
+}
+
+.box-content {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+
+.icon-circle {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(269.75deg, #19D0FC -550.59%, #07163F 107.92%);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.line {
+    width: 5px;
+    background: linear-gradient(269.75deg, #19D0FC -550.59%, #07163F 107.92%);
+    margin: 0 auto;
+    height: 110px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.step-title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.step-text {
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(51, 51, 51, 0.8);
+
+}
+
+.footer {
+    height: 300px;
+}
+
+.last-step {
+    margin-top: -70px;
+}
+
+/* Common styles for buttons */
+.btn-get {
+    position: relative !important;
+    overflow: hidden;
+    transition: color 0.4s ease, border-color 0.4s ease;
+}
+
+/* Add the fill effect */
+.btn-get::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(269.75deg, #19D0FC -550.59%, #07163F 107.92%);
+    z-index: 1;
+    transition: left 0.4s ease;
+}
+
+/* Ensure text remains above the fill */
+.btn-get span {
+    position: relative;
+    z-index: 2;
+}
+
+/* On hover: Animate the fill */
+.btn-get:hover::before {
+    left: 0;
+    /* Slide the fill in */
+}
+
+/* On hover: Change text color */
+.btn-get:hover {
+    color: white !important;
+    /* Text color when hovered */
+}
+
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes for fade-in with slide from left */
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Keyframes for fade-in with slide from right */
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Fade-in animation class */
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+/* Slide-in from left */
+.slide-in-left {
+    animation: slideInLeft 1s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+/* Slide-in from right */
+.slide-in-right {
+    animation: slideInRight 1s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+/* Delays for staggered animation effects */
+.delay-1 {
+    animation-delay: 0.5s;
+}
+
+.delay-2 {
+    animation-delay: 1s;
+}
+
+.delay-3 {
+    animation-delay: 1.5s;
+}
+
+
+@keyframes rocking-up-down {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        /* Start and end at the original position */
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* Move up gently */
+    }
+}
+
+.rocking-image {
+    animation: rocking-up-down 2s ease-in-out infinite;
+    /* Infinite up-and-down rocking */
+}
+
+.service-img-height {
+    height: 250px;
+}
+
+/* Card Pop and Rotate */
+.service_card {
+    position: relative;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.6s ease;
+}
+
+.service_card:hover {
+    transform: translateY(-12px) rotateZ(1deg);
+    /* Slight rotation and lift */
+    /* box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); Deeper shadow */
+}
+
+/* Rocking Animation for the Image */
+@keyframes rock {
+    0% {
+        transform: rotate(-5deg);
+    }
+
+    /* Tilt to the left */
+    50% {
+        transform: rotate(5deg);
+    }
+
+    /* Tilt to the right */
+    100% {
+        transform: rotate(-5deg);
+    }
+
+    /* Back to the left */
+}
+
+.service_card img {
+    transition: transform 0.5s ease;
+    /* Smooth transition for other hover effects */
+}
+
+.service_card:hover img {
+    animation: rock 0.8s infinite ease-in-out;
+    /* Rock animation on hover */
+}
+
+/* Gradient Text Animation */
+.box-title {
+    background: linear-gradient(90deg, #7ed6ff, #75acff, #3a4dfd);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    /* Gradient text */
+    transition: background-position 0.5s ease, text-shadow 0.5s ease;
+    background-size: 200% auto;
+}
+
+.service_card:hover .box-title {
+    background-position: right center;
+    /* Shimmer effect */
+}
+
+/* Box Content Smooth Fade-In */
+.box-content {
+    opacity: 0.8;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.service_card:hover .box-content {
+    opacity: 1;
+    transform: translateY(-5px);
+    /* Subtle rise */
+}
+
+.navbar-toggler {
+    border: none !important;
+    /* Remove the default border */
+}
+
+/* Use your own image for the hamburger icon */
+.navbar-toggler-icon {
+    background-image: url('images/menu.png') !important;
+    background-size: contain;
+    /* Adjust the size of the background image */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+    background-position: center;
+    /* Center the background image */
+    width: 30px;
+    /* Adjust the width of the icon */
+    height: 40px;
+    /* Adjust the height of the icon */
+}
+
+
+/* Mobile style */
+
+@media (max-width: 768px) {
+    .hero-title {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.8px;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+
+    .lead {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19.2px;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    .flex-lg-row-revers .lead {
+        text-align: center;
+    }
+
+    .add-small {
+        padding-top: 130px;
+    }
+
+    .w-60 {
+        width: 60% !important;
+    }
+
+    .sm-center {
+        text-align: center !important;
+    }
+
+    .logotext {
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 21.6px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    .btn-get {
+        text-align: center;
+        width: 139.33px;
+        height: 38.09px;
+        border-radius: 7.79px;
+        border-width: 1.46px;
+        font-size: 11.69px;
+        font-weight: 700;
+        line-height: 14.03px;
+    }
+
+    .btn-filled,
+    .btn-lined {
+        width: 100%;
+        height: auto;
+    }
+
+    .box-title {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.6px;
+    }
+
+    .box-content {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 14.4px;
+    }
+
+    .title {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.6px;
+    }
+
+    .service-img-height {
+        height: 180px;
+    }
+
+    .step-title {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.6px;
+    }
+
+    .step-text {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16.8px;
+    }
+
+    .step {
+        gap: 15px;
+    }
+
+    
+}
+
