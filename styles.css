@@ -6,7 +6,9 @@
 }
 
 body {
-    font-family: var(--font-family, 'Lato'), sans-serif;
+    font-family: var(--font-family, 'Lato'), sans-serif !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .header-bg {
@@ -552,6 +554,15 @@ body {
         gap: 15px;
     }
 
-    
+
 }
 
+@media (max-width: 991px) {
+
+    /* Apply only on mobile */
+    .navbar-collapse {
+        background: linear-gradient(269.75deg, #19cffc77 -550.59%, #07163F77 107.92%);
+        padding: 15px;
+        border-radius: 8px;
+    }
+}
