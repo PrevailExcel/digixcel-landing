@@ -557,6 +557,47 @@ body {
 
 }
 
+.testimonial-section {
+    padding: 60px 0;
+    background:  linear-gradient(269.75deg, #19D0FC -550.59%, #07163F 107.92%);
+    color: white;
+    text-align: center;
+}
+
+.testimonial-card {
+    background: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+}
+
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #07163F;
+}
+
+.testimonial-carousel .carousel-indicators {
+    bottom: -40px;
+}
+
+.testimonial-carousel .carousel-indicators button {
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.testimonial-carousel .carousel-control-prev,
+.testimonial-carousel .carousel-control-next {
+    filter: invert(1);
+}
+
 @media (max-width: 991px) {
 
     /* Apply only on mobile */
